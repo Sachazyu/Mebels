@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mebels_nav"
+    app:startDestination="@id/homeku">
+
+    <fragment
+        android:id="@+id/homeku"
+        android:name="com.example.mebels.Homeku"
+        android:label="fragment_homeku"
+        tools:layout="@layout/fragment_homeku" />
+    <fragment
+        android:id="@+id/shop"
+        android:name="com.example.mebels.Shop"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.mebels.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/penilaian"
+        android:name="com.example.mebels.Penilaian"
+        android:label="fragment_penilaian"
+        tools:layout="@layout/fragment_penilaian" />
+</navigation>

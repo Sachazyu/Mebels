@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pastel">#FFDEC9</color>
+    <color name="orange">#FF914D</color>
+    <color name="pasteel">#FFC8A6</color>
+    <color name="oren">#FFB282</color>
+    <color name="kuning">#FFF4ED</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="abu">#807A77</color>
+</resources>

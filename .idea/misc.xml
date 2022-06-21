@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/bg_item_shop.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/bg_view_profile.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/button_cancel_background.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/check_box_selector.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/dialog_background.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/elips.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_authbtn.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_authbtn2.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_back.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_back_white.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_baseline_done_24.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_baseline_error_24.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_baseline_warning_24.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_bg_user.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_edit.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_history.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_home.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_rectangle2.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_rectangle3.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_rectangle4.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/ic_signup.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable-v24/rectangle5.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable/bintang.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable/button_mebels_background.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable/ic_shop.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/drawable/rectangle5.xml" value="0.1765" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/edit_profile.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/fragment_homeku.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/fragment_penilaian.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/fragment_shop.xml" value="0.176" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/layout_error_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/layout_success_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/layout_warning_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/login.xml" value="0.264" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/logout.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/layout/splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Araa/AndroidStudioProjects/Mebels/app/src/main/res/menu/bottom_menu_mebels.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

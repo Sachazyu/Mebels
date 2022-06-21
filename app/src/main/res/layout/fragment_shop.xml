@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".Shop">
+
+    <TextView
+        android:id="@+id/produkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Produk"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/keranjang"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/produkTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/produkTitle"  />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_product"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_search"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/produkTitle"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="Search Item"
+        app:searchIcon="@drawable/search" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_product">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:layout_marginLeft="10dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_lemcar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/lemcar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lemari_kaca"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_lemcar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Lemari Kaca"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_lemcar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 1.400.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_lemcar"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent"
+                        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_mejaputih"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/aki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/meja_putih"
+                        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/tv_mejaputih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Meja Laci Putih"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_mejaputih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 555.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_mejaputih"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_lemkay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/lemkay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lemari_kayu"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_lemkay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Lemari Kayu Kaca"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_lemkay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 2.400.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_lemkay"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_lemputih"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/lemputih"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lemari_putih"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_lemputih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Lemari Putih"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_lemputih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 930.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_lemputih"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_kursi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/kursi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kursi_minimalis"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_kursi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Kursi Minimalis"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_kursi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 289.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_kursi"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view6"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_satuset"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/satuset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/satu_set"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_satuset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Set Meja Kursi"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_satuset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 1.875.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_satuset"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view7"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_mejakantor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/mejakantor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/meja_kantor"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_mejakantor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Meja Kantor"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_mejakantor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 30.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_mejakantor"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:background="@drawable/bg_item_shop"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_mejahitam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:id="@+id/mejahitam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/meja_hitam"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_mejahitam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Meja Laci Hitam"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_hrg_mejahitam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rp 700.000"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_mejahitam"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/check_box_selector"
+                        android:button="@android:color/transparent" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

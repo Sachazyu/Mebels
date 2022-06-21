@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".Homeku">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle2"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="20dp"
+            android:text="Hello"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.265" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="20dp"
+            android:paddingTop="38dp"
+            android:text="Sachazyu"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/profilepic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.194" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profileBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="20dp"
+                android:text="Promo for you"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="30dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        tools:srcCompat="@drawable/promo1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        tools:srcCompat="@drawable/promo2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00FFFFFF"
+                        tools:srcCompat="@drawable/promo3" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:text="New Product"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:id="@+id/produkNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/produk">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sofaclassic"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/pasteel"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/sofa1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Sofa Classic Elegant"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="See More"
+                    android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/seeProduk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/see" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mejkayMin"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/pasteel"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/meja1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Meja Kayu Minimalis"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="See More"
+                    android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/seeProduk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/see" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mekerMin"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/pasteel"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/meja2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Meja Kerja Kayu Minimalis"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="See More"
+                    android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/seeProduk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/see" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mePlas"
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/pasteel"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/meja3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Meja Plastic Elegant"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="See More"
+                    android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/seeProduk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/see" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
